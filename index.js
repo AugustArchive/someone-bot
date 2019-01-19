@@ -18,7 +18,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.content.toLowerCase() === `@<${client.user.id}>`') {
+    if (msg.content.toLowerCase().startsWith(`@<${client.user.id}>`)') {
         try {
             if (!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply('You need the manage messages permissions for this, wack');
             msg.channel.send(`<@${msg.guild.members.random().id}>`);
