@@ -1,0 +1,16 @@
+{
+  "name": "someone-bot",
+  "version": "1.0.0",
+  "description": "Now discord has @someone",
+  "main": "index.js",
+  "author": "Yanderella",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}
