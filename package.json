@@ -4,10 +4,11 @@
   "description": "Now discord has @someone",
   "main": "index.js",
   "author": "Yanderella",
-  "license": "MIT",
-  "private": false,
+  "license": "GPL-3.0",
   "dependencies": {
-    "discord.js": "^11.4.2",
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {
     "nodemon": "^1.18.9"
   },
   "scripts": {
