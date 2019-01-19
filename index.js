@@ -18,6 +18,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+    if msg.author.bot return;
     if ( msg.content.toLowerCase().startsWith(`<@${client.user.id}>`) ) {
         try {
             if (!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply('You need the manage messages permissions for this, wack');
