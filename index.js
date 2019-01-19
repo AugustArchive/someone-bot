@@ -22,7 +22,7 @@ client.on('message', msg => {
     if ( msg.content.toLowerCase().includes(`<@${client.user.id}>`) ) {
         try {
             if (!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply('You need the manage messages permissions for this, wack');
-            msg.channel.send(`<@${msg.guild.members.random().id}>`);
+            msg.channel.send(`<@${msg.channel.members.random().id}>`);
         } catch {
             msg.reply('oof, there was an error');
         }
