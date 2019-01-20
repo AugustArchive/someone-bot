@@ -18,7 +18,7 @@ const dbi = new dbiClient(config.dbiToken, { id: '536092396375769088' });
 
 client.on('ready', () => {
     console.log('Now I am ready for some good, good, @SoMeOnE');
-    client.user.setActivity('@someone for some good, good, SOMEONE');
+    client.user.setActivity('some help for help | @someone');
 
     setInterval( () => {
         dbi.postStats(client.guilds.size).then(console.log).catch(console.error);    // Posting your guild count to DBI and logging all responses
