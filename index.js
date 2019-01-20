@@ -44,6 +44,7 @@ client.on('message', msg => {
     } else if( msg.content.toLowerCase().startsWith('some copypasta') ) {
         try {
            msg.channel.send("https://www.reddit.com/r/copypasta/comments/88li4o/discord_someone/");
+        }
          catch(e) {
            msg.reply('oof, there was an error');
         }
